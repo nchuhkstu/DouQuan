@@ -1,0 +1,56 @@
+# server配置
+server:
+  port: 8085
+  servlet:
+    context-path: /
+    multipart:
+      enabled: true
+
+# 连接池配置
+spring:
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: admin
+    password: 123
+    virtual-host: my_vhost
+    listener:
+      simple:
+        prefetch: 1
+  servlet:
+    multipart:
+      max-file-size: 50MB
+      max-request-size: 50MB
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    druid:
+      url: jdbc:mysql:///user
+      username: root
+      password: Aa13657998660
+      driver-class-name: com.mysql.cj.jdbc.Driver
+  application:
+    name: userservice
+  cloud:
+    nacos:
+      discovery:
+        server-addr: localhost:8848
+
+# mybatis-plus的配置
+mybatis-plus:
+  type-aliases-package: com.nchu.pojo
+  global-config:
+    db-config:
+      logic-delete-field: isDeleted  #全局逻辑删除
+      id-type: auto #主键策略自增长
+
+#jwt配置
+jwt:
+  token:
+    tokenExpiration: 120 #有效时间,单位分钟
+    tokenSignKey: headline123456  #当前程序签名秘钥 自定义
+
+#pageHelper配置
+pagehelper:
+  helper-dialect: mysql
+  reasonable: true
+  support-methods-arguments: true
