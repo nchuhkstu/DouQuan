@@ -1,0 +1,107 @@
+#search-bar{
+    width: 100%;
+    margin-bottom: 8px;
+    margin-bottom: var(--gap-width);
+    display: block;
+    position: relative;
+    height: 260px;
+    background: #000;
+}
+#search-border{
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    width: 40%;
+    height: 15%;
+    transform: translate(-50%, -50%);
+    border-radius: inherit;
+    color: #838383;
+    color: var(--w-fonticon);
+    z-index: 1; /* to place it above back-map */
+    border: 2px solid #fff; /* 设置边框样式，白色边框宽度为2px，可以根据需要进行调整 */
+    box-sizing: border-box;
+    border-radius: 28px;
+    display: flex;
+    flex-direction: row; /* 纵向布局，如果需要横向则使用 row */
+    justify-content: space-between; /* 垂直方向上的元素自动占满空间 */
+    align-items: stretch; /* 子元素在横向上自动占满空间 */
+    font-size: 12px;
+}
+#search-results{
+    z-index: 3;
+    position: sticky;
+    top: 78%;
+    left: 46%;
+    width: 29%;
+    height: auto;
+    max-height: 20%;
+    transform: translate(-50%, -50%);
+    border-radius: inherit;
+    color: black;
+    background-color: white;
+    border-top: 2px solid gainsboro; /* 设置边框样式，白色边框宽度为2px，可以根据需要进行调整 */
+    box-sizing: border-box;
+    border-radius: 0 0 10px 10px;
+    font-size: 15px;
+    overflow: hidden;
+    box-sizing: content-box;
+}
+.search-result-item {
+    /* 添加此块以样式化search-results内部的内容 */
+    overflow-y: auto; /* 添加此行以启用内容的垂直滚动 */
+    max-height: 100%;
+}
+#search-border > * {
+    
+}
+#searchImg{
+    flex:1;
+}
+#search{
+    flex: 7; /* 子元素均匀占满可用空间 */
+    border: 0;
+    border-radius: 25px 0 0 25px;
+    background-color: white;
+    padding: 0;
+}
+#search::placeholder{
+    font-size:18px;
+    color: gainsboro;
+}
+#search:focus {
+    outline: none;
+}
+#clearInput{
+    background-color: white;
+    border: 0;
+    color: var(--w-fonticon);
+    z-index: 2;
+    padding: 0;
+    flex: 0;
+    position: absolute;
+    top:25%;
+    right: 25%;
+}
+#clearInput svg {
+    fill: grey; 
+    border: 0;
+}
+
+#search-button{
+    flex: 2; /* 子元素均匀占满可用空间 */
+    background-color: aquamarine;
+    border: 0;
+    border-radius: 0 25px 25px 0;
+}
+.back-map {
+    
+}
+.map-video{
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    bottom: 0;
+    z-index: 0;
+}

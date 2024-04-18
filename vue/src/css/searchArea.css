@@ -1,0 +1,40 @@
+#user-search-results {
+    display: flex;
+    height: 250px;
+    overflow-x: auto; /* 如果用户搜索结果太多，允许水平滚动 */
+  }
+  
+.user-search-result-item {
+    flex: 0 0 auto;
+    margin-right: 10px; /* 调整用户搜索结果之间的间距 */
+    padding: 5px;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.portrait {
+    margin-bottom: 10px; /* 调整头像与用户信息之间的间距 */
+  }
+  
+.portrait img {
+    width: 10px; /* 设置头像的宽度 */
+    height: 10px; /* 设置头像的高度 */
+    border-radius: 50%; /* 圆形头像 */
+    object-fit: cover; /* 裁剪图片保持比例填充 */
+}
+  #user-info {
+    display: flex;
+    margin-bottom: 5px;
+  }
+  
+  #info-label {
+    width: 60px; /* 固定标签列的宽度 */
+  }
+  
+  #info-value {
+    flex: 1; /* 自动填充剩余空间 */
+  }
+#articleArea{
+    width: 100%;
+    background-color:rgb(241, 242, 245);
+}

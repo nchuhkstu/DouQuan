@@ -1,0 +1,15 @@
+/* 可以在这里添加样式 */
+h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  p {
+    margin-bottom: 10px;
+  }
+  
+  .link {
+    text-decoration: underline;
+    cursor: pointer;
+    color: blue;
+  }

@@ -1,0 +1,91 @@
+.user-search-result-item {
+  flex-basis: 45%;
+  margin-right: 10px;
+  padding: 5px;
+  cursor: pointer;
+  border: 1px solid black;
+  border-radius: 5px;
+  height: 155px;
+  width: 100%;
+  background-color: rgb(35, 35, 35);
+  color: aliceblue;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+.user-search-result-item:hover {
+  background-color: rgba(111, 110, 110, 0.333);
+}
+#userTitle{
+  display: flex;
+  overflow-x: auto;
+  align-items: center;
+  width: 100%;
+}
+#portrait {
+  padding: 4%;
+  
+}
+#name-value {
+  padding-left: 0;
+}
+#name-value:hover{
+  color: rgb(254, 20, 20);
+}
+#portrait img {
+    width: 60px; /* 设置头像的宽度 */
+    height: 60px; /* 设置头像的高度 */
+    border-radius: 50%; /* 圆形头像 */
+    object-fit: cover; /* 裁剪图片保持比例填充 */
+}
+#follow-button{
+  text-align: center;
+  border-radius: 5px;
+  padding: 1% 6% 1% 6%;
+  background-color: rgb(244, 40, 40);
+  margin-left: auto;
+  margin-right: 5%;
+  font-size: 15px;
+  color: aliceblue;
+  border: 0;
+  outline: none;
+}
+#follow-button:hover{
+  background-color: rgb(210, 51, 51);
+}
+#user-info {
+  font-size: 12px;
+  display: flex;
+  margin-bottom: 7px;
+  width: 85%;
+}
+#info-label {
+  padding-left: 6%;
+}
+#info-value {
+  padding-left: 2%;
+  padding-right: 4%;
+}
+#apart{
+  color: rgba(240, 255, 255, 0.169);
+  font-size: 10px;
+  margin-left: auto;
+}
+#city-value{
+  padding-left: 4%;
+}
+#self-info{
+  padding-left: 5%;
+  margin-right: auto;
+  color: rgb(180, 180, 180);
+  font-size: 12px;
+  width: 80%;
+}
+#sign-time{
+  display: flex;
+  font-size: 12px;
+  width: 100%;
+  margin-top: auto;
+  padding-left: 35%;
+  color: grey;
+}

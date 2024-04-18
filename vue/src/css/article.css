@@ -1,0 +1,181 @@
+.article{
+    width:100%;
+    margin-bottom: 10px;
+    background-color: rgb(255,255,255);
+    background-color: rgb(35,35,35);
+    border-radius: 10px;
+}
+#article-head{
+    width:100%;
+    overflow: auto;
+    padding-top:10px;
+
+}
+#article-avatar{
+    width:52px;
+    height:52px;
+    float: left;
+    border-radius: 50%;
+    margin-right: 10px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+#article-headright{
+    float: left;
+    margin-left: 5px;
+}
+#article-setting{
+    height: 52px;
+    width: 52px;
+    float: right;
+    margin-right: 1vw;
+    background-image: url('../../images/sys/delete.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 50% 50%;
+    cursor: pointer;
+}
+#article-name{
+    color: rgb(191,191,191);
+    font-weight: 700;
+    font-size: 15px;
+    cursor: pointer;
+}
+#article-publishTime{
+    color: rgb(121, 121, 121);
+    font-size:13px;
+    margin-top: 5px;
+}
+#article-body{
+    width:80%;
+    margin-left: 82px;
+}
+#article-title{
+    margin-left: 5px;
+    font-size:4vh;
+    color:rgb(230,230,230);
+    word-wrap: break-word; /* 允许长单词或 URL 换行 */
+    overflow-wrap: break-word; /* 允许长单词或 URL 换行，适用于非 IE 浏览器 */
+}
+#article-content{
+    color: rgb(191,191,191);
+    font-size: 2.5vh;
+    margin-left: 5px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    word-wrap: break-word; /* 允许长单词或 URL 换行 */
+    overflow-wrap: break-word; /* 允许长单词或 URL 换行，适用于非 IE 浏览器 */
+}
+
+#article-photo-container{
+
+}
+#article-foot{
+    width: 100%;
+    overflow: auto;
+}
+#article-foot-click{
+    display: flex;
+    align-items: center;
+    width: 80%;
+    margin-left: 87px;
+    justify-content: space-between;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+#article-foot-heart{
+    width: 16px;
+    cursor: pointer;
+
+}
+#article-foot-comment{
+    width: 16px;
+    cursor: pointer;
+}
+#article-foot-share{
+    width: 16px;
+    cursor: pointer;
+}
+#article-foot-commentArea{
+    width: 100%;
+    display: none;
+    /* display: flex; */
+    /* justify-content: center; */
+}
+#article-commentArea{
+    width: 100%;
+    display: none;
+    max-height: 400px;
+    overflow: auto;
+}
+::-webkit-scrollbar {
+    width: 5px; /* 设置滚动条的宽度 */
+}
+
+/* 设置滚动条的轨道样式 */
+::-webkit-scrollbar-track {
+    background-color: rgb(35,35,35); /* 设置滚动条轨道的背景颜色 */
+}
+
+/* 设置滚动条的滑块样式 */
+::-webkit-scrollbar-thumb {
+    background-color: #888; /* 设置滚动条滑块的背景颜色 */
+    border-radius: 5px; /* 设置滚动条滑块的边框半径 */
+}
+  
+  /* 设置滚动条的滑块在hover状态下的样式 */
+::-webkit-scrollbar-thumb:hover {
+    background-color: #555; /* 设置滚动条滑块在hover状态下的背景颜色 */
+}
+#article-foot-input-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+#article-foot-input{
+    background-color: rgb(44,44,44);
+    color: rgb(191,191,191);
+    align-items: normal;
+    width: 80%;
+    height: 60px;
+    line-height: 24px;
+    border: none;
+    padding: 0;
+    font-size: 18px;
+    resize: none; /* 禁止用户调整尺寸 */
+    padding-left: 5px;
+}
+#article-foot-input:focus{
+    outline: 1px solid rgb(234,128,17);
+}
+#article-foot-input-button{
+    width: 8%;
+    height: 60px;
+    background-color: rgb(234,128,17);
+    border: 0px;
+    cursor: pointer;
+
+}
+.article-foot-label{
+    padding-top: 0px;
+    font-size: 17px;
+    cursor: pointer;
+    color: rgb(128,128,128);
+}
+.article-photo{
+    margin-left: 5px;
+    width: 150px;
+    height: 150px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.article-photo.active {
+  width: 100%; 
+  height: auto;
+}
+
+.article-photo:not(.active) {
+    width: 150px;
+    height: 150px;
+}
